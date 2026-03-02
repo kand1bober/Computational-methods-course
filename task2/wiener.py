@@ -35,6 +35,7 @@ def main():
     plt.ylabel('W(t)')
     plt.grid(True, alpha=0.3)
     plt.legend()
+    plt.savefig("wiener.png")
     plt.show()
 
 
