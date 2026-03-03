@@ -7,7 +7,7 @@ def gen_wiener_proc(T, delta):
 
     time_grid = np.linspace(0, T, time_steps_num)
 
-    dW = np.random.normal(0, delta, time_steps_num) 
+    dW = np.random.normal(0, np.sqrt(delta), time_steps_num)
 
     trajectorie = np.zeros(time_steps_num) # including t= 0
     
